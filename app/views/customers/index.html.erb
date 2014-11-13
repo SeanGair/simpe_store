@@ -1,0 +1,8 @@
+<h1 class="listing">Listing Customers</h1>
+
+<%= render partial: 'customer', collection: @customers, locals: {display_link_to_show: true} %>
+  
+
+<br>
+
+<%= link_to 'New Customer', new_customer_path %>
