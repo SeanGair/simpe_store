@@ -1,0 +1,11 @@
+<h1 class="listing">Listing Customers</h1>
+
+
+
+<% @missing = @customers.where("email LIKE ''") %>
+
+<%= render partial: 'customer', collection: @missing, locals: {display_link_to_show: true} %>  
+
+<br>
+
+<%= link_to 'New Customer', new_customer_path %>

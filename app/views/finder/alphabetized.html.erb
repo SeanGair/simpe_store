@@ -1,0 +1,8 @@
+<h1 class="listing">All Customers</h1>
+
+<% @sorted = @customers.sort_by {|c| c.full_name.downcase} %>
+
+<%= render partial: 'customer', collection: @sorted, locals: {display_link_to_show: true} %>
+  
+
+<br>
