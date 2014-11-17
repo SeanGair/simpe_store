@@ -7,6 +7,14 @@
 		<% end %>
 	</h2>
 
+    <p> Province:
+      <% if customer.province.present? %>
+        <%= customer.province.name %>
+      <% else %>
+        None
+      <% end %>
+    </p>
+
 	<p>
 	  <%= image_tag(customer.image) %>
 	</p>
